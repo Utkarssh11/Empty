@@ -1,0 +1,294 @@
+body {
+    font-family: 'Open Sans', 'Lato', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f8;
+    margin: 0;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.resume-container {
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 40px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Updated styles for the main header area */
+.main-header-info {
+    text-align: center;
+    padding: 15px 0 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 8px; /* Space between name and contact line */
+}
+
+.main-name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2em; /* Prominent name size */
+    color: #2c3e50;
+    margin: 0; /* Reset margin for h1 */
+    line-height: 1.2;
+}
+
+.contact-details-line {
+    display: flex;
+    flex-wrap: wrap; /* Allow contact items to wrap on smaller screens */
+    justify-content: center; /* Center contact items if they wrap */
+    align-items: center;
+    gap: 5px 0px; /* Gap for wrapped items */
+    font-size: 0.95em;
+    color: #333;
+}
+
+.contact-link {
+    color: #3498db;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 4px;
+    padding: 2px 0;
+    line-height: 1.2;
+}
+
+.contact-link svg {
+    margin-right: 0.4em;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+}
+
+.contact-link:hover, .contact-link:focus {
+    text-decoration: underline;
+    color: #2980b9;
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.contact-separator {
+    color: #aaa;
+    margin: 0 4px;
+    line-height: 1.2;
+}
+
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    color: #2980b9;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Portfolio Section Styles Removed */
+
+/* Education & Experience specific styling */
+.education-item, .job {
+    margin-bottom: 25px;
+}
+
+.date-location {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.degree-title, .job-title {
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+.job .job-title {
+    margin-bottom: 3px;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 0;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #454545;
+}
+
+/* Technical Skills */
+.skills-list p {
+    margin: 8px 0;
+}
+.skill-label {
+    font-weight: bold;
+    color: #34495e;
+    min-width: 130px;
+    display: inline-block;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 20px;
+}
+.project .project-type {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+.project-repo-link {
+    margin-top: 8px;
+}
+.project-repo-link a {
+    display: inline-flex;
+    align-items: center;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+.project-repo-link a:hover, .project-repo-link a:focus {
+    text-decoration: underline;
+    color: #2980b9;
+}
+.project-repo-link svg { /* GitHub Icon */
+    margin-right: 0.3em;
+}
+.project-repo-link svg:last-child { /* External link icon after text */
+    margin-right: 0;
+    margin-left: 0.3em;
+}
+
+
+/* Achievements */
+#achievements-heading + ul {
+    padding-left: 20px;
+}
+
+/* Coding Profiles */
+.coding-profiles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.coding-profile-link {
+    display: inline-flex;
+    align-items: center;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 0;
+}
+.coding-profile-link:hover, .coding-profile-link:focus {
+    text-decoration: underline;
+    color: #2980b9;
+}
+.coding-profile-link svg:first-child { /* Icon before text */
+    margin-right: 0.3em;
+}
+.coding-profile-link svg:last-child { /* External link icon after text */
+    margin-right: 0;
+    margin-left: 0.3em;
+}
+
+
+/* Print-specific styles */
+@media print {
+    body {
+        background-color: #fff;
+        padding: 0;
+        font-size: 10pt;
+    }
+    .resume-container {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+        border: none;
+        padding: 20px;
+    }
+    .main-header-info {
+        text-align: center; /* Center align content within header */
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        gap: 4px;
+    }
+    .main-name {
+        font-size: 1.6em; /* Adjusted for print */
+    }
+    .contact-details-line {
+        font-size: 0.9em; /* Adjust size for print if needed */
+    }
+    .contact-link, .contact-separator {
+        margin: 0 3px;
+    }
+
+    section h2 {
+        font-size: 14pt;
+        border-bottom: 1px solid #ccc;
+    }
+    section h3 {
+        font-size: 12pt;
+    }
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    .contact-details-line a::after, /* Show URLs for contact links in header */
+    .project-repo-link a::after,
+    .coding-profile-link a::after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        color: #555 !important; /* Ensure color override */
+        word-break: break-all;
+    }
+    
+    svg {
+      width: 0.8em;
+      height: 0.8em;
+      vertical-align: baseline;
+      fill: #000 !important; /* Ensure icons are visible in print */
+    }
+    
+    /* Hide external link icons if URL is shown via ::after */
+    .project-repo-link svg:last-child, /* External link icon in project */
+    .coding-profile-link svg:last-child { /* External link icon in coding profile */
+        display: none;
+    }
+    /* Ensure other icons in header remain */
+    .contact-details-line .contact-link svg {
+        display: inline-block !important; /* Ensure these icons show */
+    }
+
+    ul, .skills-list p, .project, .coding-profiles-list {
+        page-break-inside: avoid;
+    }
+    li {
+        font-size: 9.5pt;
+    }
+}
